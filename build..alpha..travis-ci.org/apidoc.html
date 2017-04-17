@@ -1,0 +1,177 @@
+<div class="apidocDiv">
+<style>
+/*csslint
+*/
+.apidocDiv {
+    background: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.apidocDiv a[href] {
+    color: #33f;
+    font-weight: bold;
+    text-decoration: none;
+}
+.apidocDiv a[href]:hover {
+    text-decoration: underline;
+}
+.apidocCodeCommentSpan {
+    background: #bbf;
+    color: #000;
+    display: block;
+}
+.apidocCodeKeywordSpan {
+    color: #d00;
+    font-weight: bold;
+}
+.apidocCodePre {
+    background: #eef;
+    border: 1px solid;
+    color: #777;
+    padding: 5px;
+    white-space: pre-wrap;
+}
+.apidocFooterDiv {
+    margin-top: 20px;
+    text-align: center;
+}
+.apidocModuleLi {
+    margin-top: 10px;
+}
+.apidocSectionDiv {
+    border-top: 1px solid;
+    margin-top: 20px;
+}
+.apidocSignatureSpan {
+    color: #777;
+    font-weight: bold;
+}
+</style>
+<h1>api documentation for
+    <a
+
+        href="https://github.com/steel1990/gulp-compressor"
+
+    >gulp-compressor (v0.1.0)</a>
+</h1>
+<h4>A gulp plugin for compressor(minify) html,js and css.</h4>
+<div class="apidocSectionDiv"><a
+    href="#apidoc.tableOfContents"
+    id="apidoc.tableOfContents"
+><h1>table of contents</h1></a><ol>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.gulp-compressor">module gulp-compressor</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.gulp-compressor.gulp-compressor">
+            function <span class="apidocSignatureSpan"></span>gulp-compressor
+            <span class="apidocSignatureSpan">(options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.gulp-compressor.toString">
+            function <span class="apidocSignatureSpan">gulp-compressor.</span>toString
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.gulp-compressor.toString">module gulp-compressor.toString</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.gulp-compressor.toString.toString">
+            function <span class="apidocSignatureSpan">gulp-compressor.</span>toString
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+</ol></div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.gulp-compressor" id="apidoc.module.gulp-compressor">module gulp-compressor</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.gulp-compressor.gulp-compressor" id="apidoc.element.gulp-compressor.gulp-compressor">
+        function <span class="apidocSignatureSpan"></span>gulp-compressor
+        <span class="apidocSignatureSpan">(options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">gulp-compressor = function (options) {
+    return through.obj(function (file, encoding, callback) {
+        var me = this;
+        if (file.isDirectory()) {
+            return callback();
+        }
+        var ext = path.extname(file).slice(1).toLowerCase();
+        var opt = clone(options);
+        if (ext) {
+            opt.type = ext;
+        }
+        opt.fromString = true;
+
+        compressor(String(file.contents), opt, function (err, result) {
+            if (err) {
+                throw new Error(err);
+            }
+            file.contents = new Buffer(result);
+            me.push(file);
+            callback();
+        });
+    });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.gulp-compressor.toString" id="apidoc.element.gulp-compressor.toString">
+        function <span class="apidocSignatureSpan">gulp-compressor.</span>toString
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">toString = function () {
+    return text;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.gulp-compressor.toString" id="apidoc.module.gulp-compressor.toString">module gulp-compressor.toString</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.gulp-compressor.toString.toString" id="apidoc.element.gulp-compressor.toString.toString">
+        function <span class="apidocSignatureSpan">gulp-compressor.</span>toString
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function toString() { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocFooterDiv">
+    [ this document was created with
+    <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a>
+    ]
+</div>
+</div>
