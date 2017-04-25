@@ -1,4 +1,7 @@
-# api documentation for  [gulp-compressor (v0.1.0)](https://github.com/steel1990/gulp-compressor)  [![npm package](https://img.shields.io/npm/v/npmdoc-gulp-compressor.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-gulp-compressor) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-gulp-compressor.svg)](https://travis-ci.org/npmdoc/node-npmdoc-gulp-compressor)
+# npmdoc-gulp-compressor
+
+#### basic api documentation for  [gulp-compressor (v0.1.0)](https://github.com/steel1990/gulp-compressor)  [![npm package](https://img.shields.io/npm/v/npmdoc-gulp-compressor.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-gulp-compressor) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-gulp-compressor.svg)](https://travis-ci.org/npmdoc/node-npmdoc-gulp-compressor)
+
 #### A gulp plugin for compressor(minify) html,js and css.
 
 [![NPM](https://nodei.co/npm/gulp-compressor.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/gulp-compressor)
@@ -55,7 +58,8 @@
         "type": "git",
         "url": "git+https://github.com/steel1990/gulp-compressor.git"
     },
-    "version": "0.1.0"
+    "version": "0.1.0",
+    "bin": {}
 }
 ```
 

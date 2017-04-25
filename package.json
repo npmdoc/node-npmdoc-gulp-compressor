@@ -1,6 +1,6 @@
 {
     "author": "kai zhu <kaizhu256@gmail.com>",
-    "description": "api documentation for [gulp-compressor (v0.1.0)](https://github.com/steel1990/gulp-compressor) [![npm package](https://img.shields.io/npm/v/npmdoc-gulp-compressor.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-gulp-compressor) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-gulp-compressor.svg)](https://travis-ci.org/npmdoc/node-npmdoc-gulp-compressor)",
+    "description": "#### basic api documentation for  [gulp-compressor (v0.1.0)](https://github.com/steel1990/gulp-compressor)  [![npm package](https://img.shields.io/npm/v/npmdoc-gulp-compressor.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-gulp-compressor) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-gulp-compressor.svg)](https://travis-ci.org/npmdoc/node-npmdoc-gulp-compressor)",
     "devDependencies": {
         "electron-lite": "kaizhu256/node-electron-lite#alpha",
         "gulp-compressor": "*",
@@ -35,5 +35,5 @@
         "start": "(set -e; export PORT=${PORT:-8080}; utility2 start test.js)",
         "test": "(set -e; export PORT=$(utility2 shServerPortRandom); utility2 test test.js)"
     },
-    "version": "0.0.1"
+    "version": "2017.4.25"
 }
